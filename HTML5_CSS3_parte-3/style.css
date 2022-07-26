@@ -128,3 +128,26 @@ form legend {
 .checkbox {
     margin: 20px 0;
 }
+
+.enviar {
+    width: 40%;
+    margin-top: 24px;
+    padding: 15px 0;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #fff;
+    background-color: #fa0;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.enviar:hover {
+    transform: scale(1.2);
+    background-color: #f70;
+}
