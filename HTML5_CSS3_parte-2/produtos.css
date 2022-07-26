@@ -46,6 +46,9 @@ nav a {
 
     text-align: center;
     background-color: #ccc;
+
+    border: 10px solid #000;
+    border-radius: 5px;
 }
 
 .produtos h2 {
