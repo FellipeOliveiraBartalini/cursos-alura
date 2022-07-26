@@ -151,3 +151,20 @@ form legend {
     transform: scale(1.2);
     background-color: #f70;
 }
+
+table {
+    margin: 20px 40px;
+}
+
+thead {
+
+    font-weight: bold;
+    
+    color: #fff;
+    background-color: #555;
+}
+
+th, td {
+    padding: 8px 15px;
+    border: 1px solid #000;
+}
