@@ -3,12 +3,25 @@
     src: url(../font/icones.ttf);
 }
 
+:root {
+    --corpo: #1D232A;
+    --cabecalho: #1D232A;
+    --cabecalho-mobile: #15191C;
+    --menu-lateral: #15191C;
+    --cartao: #2C343A;
+    --fonte: #FFFFFF;
+    --fonte-alternativa: #95999C;
+    --links: #0480DC;
+    --botão: #0480DC;
+    --sombras: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
 body {
 
     font-family: 'Open Sans', 'icones', sans-serif;
 
     color: #fff;
-    background-color: #1d232a;
+    background-color: var(--corpo);
 }
 
 .cabecalho {
@@ -18,8 +31,8 @@ body {
 
     padding: .5rem 1rem;
 
-    background-color: #15191c;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, .16);
+    background-color: var(--cabecalho-mobile);
+    box-shadow: var(--sombras);
 }
 
 .cabecalho__menu i::before {
@@ -45,7 +58,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    background-color: #15191c;
+    background-color: var(--menu-lateral);
 
     transition: all .3s;
 }
@@ -68,7 +81,7 @@ body {
     display: flex;
     align-items: center;
 
-    color: #95999c;
+    color: var(--fonte-alternativa);
 }
 
 .menu-lateral__link--ativo {
@@ -111,4 +124,90 @@ body {
 
 .menu-lateral__link--pinturas::before {
     content: "\e902";
+}
+
+.principal {
+    padding: 24px 16px;
+}
+
+.titulo-pagina {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cartao {
+    overflow: hidden;
+    width: 100%;
+
+    background-color: var(--cartao);
+
+    border-radius: 15px;
+}
+
+.cartao__conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 16px;
+}
+
+.cartao__destaque {
+    grid-column: span 2;
+}
+
+.cartao__titulo {
+    grid-column: span 2;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cartao__perfil {
+    grid-column: span 2;
+    color: var(--fonte-alternativa);
+    font-size: .9rem;
+}
+
+.cartao__info {
+    display: flex;
+    align-items: center;
+
+    color: var(--fonte-alternativa);
+}
+
+.cartao__info--tempo::before {
+    content: "\e90c";
+    margin-right: 8px;
+}
+
+.cartao__info--visualizacao::before {
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.cartao__botao {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: .9rem;
+
+    background-color: var(--botão);
+    border-radius: 10px;
+}
+
+.cartao__botao--play::before {
+    content: "\e90b";
+    font-size: 24px;
+}
+
+.cartao__botao--destaque {
+    grid-column: span 2;
+    width: 100%;
+}
+
+.cartao__botao--destaque::before {
+    margin-right: 8px;
 }
