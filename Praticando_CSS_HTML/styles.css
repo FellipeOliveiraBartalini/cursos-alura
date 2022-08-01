@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+:root {
+    --branco-principal: #fff;
+    --cinza-secondario: #c0c0c0;
+    --bota-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--branco-principal);
+    background-color: var(--cor-de-fundo);
+}
+
+.container {
+    height: 100vh;
+}
+
+.principal {
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
