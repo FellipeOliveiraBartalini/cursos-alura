@@ -1,0 +1,39 @@
+.banner {
+    padding: 2.5em 2em;
+
+    text-align: center;
+
+    color: var(--clr-white);
+    background-image: var(--clr-gradient-blue);
+}
+
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner__texto {
+    padding: 1em 0;
+    font-weight: 500;
+}
+
+.banner__pesquisa {
+    width: 100%;
+    padding: 1em;
+
+    text-align: center;
+
+    color: var(--clr-white);
+    background: transparent;
+
+    font-family: var(--font-principal);
+    font-size: 1em;
+    
+    outline: none;
+    border: 1px solid var(--clr-white);
+    border-radius: 50px;
+}
+
+.banner__pesquisa::placeholder {
+    opacity: .95;
+}
