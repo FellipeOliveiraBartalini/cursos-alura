@@ -125,3 +125,45 @@
 .card-mais-vendidos .card__link {
     grid-row: 5;
 }
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    /* .swiper-button {
+        width: 75px;
+        height: 75px;
+        padding: 1rem;
+
+        text-align: center;
+        
+        color: var(--clr-white);
+        background-image: var(--clr-gradient-blue);
+        
+        border-radius: 50%;
+        box-sizing: border-box;
+    } */
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 40%;
+        height: 60%;
+        margin: 3em auto;
+
+        align-items: flex-start;
+    }
+}

@@ -18,6 +18,8 @@
     flex-flow: row wrap;
     justify-content: center;
     gap: 1em;
+
+    padding: 0 6em 1em 6em;
 }
 
 .lista__item {
@@ -29,4 +31,14 @@
 .topicos__link {
     color: var(--clr-white);
     text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .topicos__titulo {
+        font-size: 24px;
+    }
+
+    .topicos__link {
+        font-size: 24px;
+    }
 }

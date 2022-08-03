@@ -42,3 +42,26 @@
 .newsletter__input::placeholder {
     opacity: .95;
 }
+
+@media screen and (min-width: 1024px) {
+    .newsletter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .newsletter__titulo {
+        margin-bottom: 3em;
+        font-size: 24px;
+    }
+
+    .newsletter__descricao {
+        width: 30%;
+        margin-right: 1em;
+    }
+
+    .newsletter__input {
+        width: 30%;
+    }
+}
