@@ -65,3 +65,13 @@
         width: 30%;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .newsletter {
+        padding: 3em 20vw;
+    }
+
+    .newsletter__titulo {
+        margin-bottom: 1em;
+    }
+}
